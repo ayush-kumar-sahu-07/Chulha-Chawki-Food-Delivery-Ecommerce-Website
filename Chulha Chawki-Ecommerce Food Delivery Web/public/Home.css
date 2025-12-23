@@ -1,0 +1,508 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* loading Effect */
+#headLoader{
+    width: 90%;
+    padding: 33px;
+    background-color: #eeeded;
+    margin: auto;
+    border-radius: 6px;
+    margin-top: 13px;
+}
+.mainLode{
+    width: 80%;
+    height: 260px;
+    background-color: #eeeded;
+    margin: auto;
+    border-radius: 6px;
+    margin-top: 13px;
+    margin-top: 28px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards{
+    margin-top: 55px;
+}
+.cards .cardLoad{
+    width: 340px;
+    height: 300px;
+    background-color: #eeeded;
+    border-radius: 6px;
+    margin-inline: 20px;
+
+}
+.cardLoad p{
+    width: 330px;
+    height: 25px;
+    background-color: #eeeded;
+    border-radius: 4px;
+    margin-top: 321px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: rgb(248, 164, 103);
+    height: 70px;
+    box-shadow: 1px 3px 3px 3px rgb(216, 216, 216);
+}
+.logo h1{
+    font-size: 35px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-inline: 22px;
+    font-size: 20px;
+}
+.icons{
+    display: flex;
+    gap: 28px;
+}
+.icons i{
+    font-size: 25px;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 140px;
+}
+.mainText {
+    margin-top: 42px;
+}
+.mainText h1{
+    font-size: 65px;
+}
+.mainText p{
+    margin-top: 22px;
+}
+.mainText button{
+    margin-top: 22px;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.head{
+    text-align: center;
+    padding: 86px;
+}
+.foodCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.foodCard .card{
+    width: 300px;
+    margin-inline: 22px;
+    margin-top: 22px;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+}
+.card p{
+    padding: 9px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    margin-inline: 6px;
+    margin-top: 12px;
+}
+.gallery img:hover{
+    box-shadow: 2px 5px 6px 5px gray;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+}
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.blogCard{
+    display: flex;
+    gap: 22px;
+    width: 500px;
+    padding: 22px;
+    background-color: #575656;
+    margin-inline: 22px;
+    color: white;
+    margin-top: 22px;
+}
+.blogCard img{
+    width: 300px;
+}
+.blogText p{
+    margin-top: 12px;
+}
+.blogText a{
+    padding: 6px 20px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 11px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 66px;
+    margin-top: 66px;
+    background-color: rgb(85, 40, 8);
+    color: white;
+
+}
+.text p{
+    margin-top: 12px;
+}
+
+.foodDetail{
+    display: flex;
+    gap: 42px;
+
+    margin-top: 33px;
+    width: 750px;
+}
+.foodDetail img{
+    width: 400px;
+    height: 300px;
+}
+.foodDetail h2{
+    margin-top: 22px;
+}
+.foodDetail p{
+    margin-top: 22px;
+}
+.foodDetail button{
+    margin-top: 22px;
+    width: 110px;
+    height: 33px;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.foodDetail a{
+    padding: 5px;
+    background-color: rgb(25, 0, 255);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+#bar{
+    display: none;
+    font-size: 25px;
+}
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:750px){
+    ul{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px){
+    .mainText h1{
+        font-size: 33px;
+    }
+    .main img{
+        width: 90%;
+    }
+    .mainText p{
+        font-size: 16px;
+    }
+    
+    .blogCard{
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
+    .blogCard img{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .foodDetail{
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
+    .foodDetail img{
+        width: 90%;
+    }
+}
+@media screen and (max-width:400px){
+    .gallery img{
+        width: 90%;
+    }
+}
+.login-btn{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Additional mobile responsiveness for Android screens */
+@media screen and (max-width: 360px) {
+    nav {
+        padding: 0 2vw;
+        height: 60px;
+    }
+    .logo h1 {
+        font-size: 28px;
+    }
+    ul li a {
+        font-size: 16px;
+        margin-inline: 16px;
+    }
+    .icons {
+        gap: 20px;
+    }
+    .icons i {
+        font-size: 22px;
+    }
+    .main {
+        margin-top: 120px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mainText {
+        margin-top: 20px;
+    }
+    .mainText h1 {
+        font-size: 28px;
+    }
+    .mainText p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .mainText button {
+        width: 130px;
+        height: 36px;
+        font-size: 18px;
+    }
+    .head {
+        padding: 40px 2vw;
+    }
+    .foodCard .card {
+        width: 98vw;
+        margin-inline: 0;
+        margin-top: 16px;
+    }
+    .card img {
+        height: 200px;
+    }
+    .card p {
+        padding: 6px;
+        font-size: 14px;
+    }
+    .gallery {
+        padding: 0 2vw;
+    }
+    .gallery img {
+        width: 98vw;
+        height: 180px;
+        margin-inline: 0;
+        margin-top: 8px;
+    }
+    .blogs {
+        padding: 0 2vw;
+    }
+    .blogCard {
+        width: 98vw;
+        padding: 16px;
+        gap: 16px;
+        margin-inline: 0;
+        margin-top: 16px;
+    }
+    .blogCard img {
+        width: 98vw;
+    }
+    .blogText p {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .blogText a {
+        padding: 4px 16px;
+        font-size: 14px;
+    }
+    .footer {
+        padding: 40px 2vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        margin-bottom: 20px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .foodDetail {
+        width: 98vw;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .foodDetail img {
+        width: 98vw;
+        height: 250px;
+    }
+    .foodDetail h2 {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+    .foodDetail p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .foodDetail button {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .foodDetail a {
+        padding: 4px 8px;
+        font-size: 16px;
+    }
+    .carTab {
+        width: 98vw;
+    }
+    .carTab .ListCart .item {
+        grid-template-columns: 50px 100px 40px 1fr;
+        gap: 8px;
+    }
+    .carTab .ListCart .item img {
+        width: 50px;
+    }
+    .foodCard .add {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+.carTab{
+    width: 400px;
+    background-color: #353432;
+    color:#eee;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: inset 0.5s ease-in-out;
+}
+body.showCart .carTab {
+    inset: 0 0 0 auto;
+}
+.carTab h1{ 
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.carTab .btn{ 
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.carTab .btn button{
+    background-color: #E88C0E;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.carTab .ListCart .item img{
+    width: 100%;
+}
+.carTab .ListCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.ListCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ListCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+
+.ListCart .item:nth-child(even){
+    background-color: #eee1;
+}
+
+.ListCart{
+    overflow: auto;
+}
+.ListCart::-webkit-scrollbar{
+    width: 0;
+}
+.fa-bag-shopping{
+    cursor: pointer;
+}
+
+.foodCard  .add{
+    margin-top: 22px;
+    width: 110px;
+    height: 33px;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}

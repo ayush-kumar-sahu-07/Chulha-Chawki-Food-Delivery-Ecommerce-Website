@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chulha Chawki - Food Delivery & Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+    <span class="close-cart-modal">&times;</span>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-price">₹0</span>
+    </div>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+</div>
+        <!-- ...existing code... -->
+<!-- Add hamburger menu for mobile navigation -->
+<nav>
+    <div class="logo">
+        <h1>Chulha Chawki.</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="">HOME</a></li>
+        <li><a href="#food">FOOD</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#blog">BLOGS</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#testimonials">TESTIMONIALS</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="header-auth">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="signup.html" class="login-btn">Sign Up</a>
+    </div>
+    <div class="icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-bag-shopping" id="cart-icon"></i>
+        <span id="cart-count" class="cart-count">0</span>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div id="bar" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<!-- ...existing code... -->
+
+        <div class="main">
+            <div class="mainText">
+                <h1>Chulha Chawki – Your Taste, Your City 🍴</h1>
+                <p>
+                    Chulha Chawki is a modern food delivery platform designed to bring the authentic flavors of your city right to your doorstep. Whether you crave traditional dishes, street food delights, or your favorite restaurant meals, Chulha Chawki ensures quick, reliable, and satisfying service.
+
+
+                </p>
+                <button>Explore</button>
+                
+<div id="explore-modal" class="explore-modal">
+    <div class="explore-modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Explore Food" />
+        <h2>Discover Chulha Chawki</h2>
+        <p>
+            Welcome to Chulha Chawki! We deliver a variety of fresh, delicious food right to your doorstep. 
+            Explore our menu for mouth-watering burgers, pizzas, sushi, and more. 
+            Enjoy exclusive offers, fast delivery, and the best quality ingredients every time you order!
+        </p>
+    </div>
+</div>
+            </div>
+            <img src="burg.png" alt="Burger">
+        </div>
+
+        <div id="food">
+            <div class="head">
+                <h1>Our Foods</h1>
+            </div>
+            <div class="foodCard">
+                <div class="card">
+                    <img src="fd1.jpg" alt="Paneer Tikka">
+                    <p>Pattie Burger</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹199</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="fd2.jpg" alt="Veg Burger">
+                    <p>Veg Burger</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹99</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="fd3.jpg" alt="Pizza">
+                    <p>Cheese Pizza</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹249</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="fd4.jpg" alt="French Fries">
+                    <p>French Fries</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹79</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="fd5.jpg" alt="Sandwich">
+                    <p>Grilled Sandwich</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹129</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="fd6.jpg" alt="Pasta">
+                    <p>Italian Pasta</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹159</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Sushi">
+                    <p>Veg Sushi</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹299</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="https://t3.ftcdn.net/jpg/02/93/22/02/360_F_293220207_aSKIua6mTAymZDbIJOSOApeJ7vNoD6Zd.jpg" alt="Salad">
+                    <p>Fresh Salad</p>
+                    <p>Free Delivery</p>
+                    <p class="price">₹89</p>
+                        <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="pricing">
+            <div class="head">
+                <h1>Pricing & Offers</h1>
+            </div>
+            <div class="pricing-section">
+                <div class="pricing-card">
+                    <img src="fd1.jpg" alt="Paneer Tikka">
+                    <h2>Paneer Tikka</h2>
+                    <p>₹199 <span class="old-price">₹249</span></p>
+                    <p class="offer">20% OFF</p>
+                </div>
+                <div class="pricing-card">
+                    <img src="fd2.jpg" alt="Veg Burger">
+                    <h2>Veg Burger</h2>
+                    <p>₹99 <span class="old-price">₹129</span></p>
+                    <p class="offer">Save ₹30</p>
+                </div>
+                <div class="pricing-card">
+                    <img src="fd3.jpg" alt="Pizza">
+                    <h2>Cheese Pizza</h2>
+                    <p>₹249 <span class="old-price">₹299</span></p>
+                    <p class="offer">Bulk Order: 50% OFF</p>
+                </div>
+                <div class="pricing-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Sushi">
+                    <h2>Veg Sushi</h2>
+                    <p>₹299 <span class="old-price">₹349</span></p>
+                    <p class="offer">New Arrival</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery">
+            <div class="head">
+                <h1>Foods Gallery</h1>
+            </div>
+            <div class="gallery">
+                <img src="g1.jpg" alt="Gallery 1">
+                <img src="g2.jpg" alt="Gallery 2">
+                <img src="fd1.jpg" alt="Gallery 3">
+                <img src="g3.jpg" alt="Gallery 4">
+                <img src="g4.jpg" alt="Gallery 5">
+                <img src="fd3.jpg" alt="Gallery 6">
+                <img src="https://images.squarespace-cdn.com/content/v1/5ec30182cff13b4331c5384d/1677207139729-KTC6G6TMQZ7CZ5HO4W8D/IMG_0182.jpeg" alt="Gallery 7">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Gallery 8">
+            </div>
+        </div>
+
+        <div id="blog">
+            <div class="head">
+                <h1>Read Blogs</h1>
+            </div>
+            <div class="blogs">
+                <div class="blogCard">
+                    <img src="https://gangaursweets.com/wp-content/uploads/2025/04/SUGAR-FREE-KAJU-KATLI-500-640.png" alt="Blog 1">
+                    <div class="blogText">
+                        <h2>Upto 50% Off on GANGAUR SEETS</h2>
+                        <p>Order in GANGAUR SWEETS and enjoy massive discounts on your favorite dishes. Perfect for parties and events!</p>
+                        <a href="https://gangaursweets.com/">Read Now</a>
+                    </div>
+                </div>
+                <div class="blogCard">
+                    <img src="fd2.jpg" alt="Blog 2">
+                    <div class="blogText">
+                        <h2>Fresh Ingredients, Always</h2>
+                        <p>We believe in quality and freshness. Learn how Chulha Chawki sources the best ingredients for every meal.</p>
+                        <a href="https://iamafoodblog.com/" target="_blank">Read Now</a>
+                    </div>
+                </div>
+                <div class="blogCard">
+                    <img src="https://media.istockphoto.com/id/1341976416/photo/healthy-eating-and-diet-concepts-top-view-of-spring-salad-shot-from-above-on-rustic-wood-table.jpg?s=612x612&w=0&k=20&c=W5KTFYX-XpIioWdMwcb2ESGZGyolLSCd9vbNUxpZiQE=" alt="Blog 3">
+                    <div class="blogText">
+                        <h2>Healthy Eating Tips</h2>
+                        <p>Discover how to eat healthy while enjoying your favorite fast foods. Tips from our chefs!</p>
+                        <a href="https://www.eatingwell.com/" target="_blank">Read Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+    <div class="head">
+        <h1>About Chulha Chawki</h1>
+    </div>
+    <div class="about-section">
+        <img src="fd5.jpg" alt="About Us" class="about-img">
+        <div class="about-text">
+            <h2>Why Choose Chulha Chawki?</h2>
+            <p>
+                Chulha Chawki is your trusted partner for fresh, delicious, and affordable food. Our chefs craft every dish with passion and care, ensuring you get the best taste every time. We offer free delivery, exclusive offers, and a menu that keeps evolving with your cravings!
+            </p>
+            <div class="about-features">
+                <!-- Feature cards here -->
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="about-team">
+                <h2>Meet Our Chefs</h2>
+                <div class="team-section">
+                    <div class="team-card">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Chef 1">
+                        <h3>Chef Amit</h3>
+                        <p>Head Chef, 15+ years experience in Indian cuisine.</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Chef 2">
+                        <h3>Chef Priya</h3>
+                        <p>Pastry Chef, specializes in desserts and fusion food.</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Chef 3">
+                        <h3>Chef Rohan</h3>
+                        <p>Continental Expert, brings global flavors to your plate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonials">
+            <div class="head">
+                <h1>What Our Customers Say</h1>
+            </div>
+            <div class="testimonial-section">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1">
+                    <div class="testimonial-text">
+                        <p>"The food was absolutely delicious and arrived super fast! Highly recommend Chulha Chawki for their quality and service."</p>
+                        <h4>- Priya Sharma</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 2">
+                    <div class="testimonial-text">
+                        <p>"Great variety, affordable prices, and the best paneer tikka I've ever had. Will order again!"</p>
+                        <h4>- Rahul Verma</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer 3">
+                    <div class="testimonial-text">
+                        <p>"Customer support was very helpful and the delivery was on time. Loved the experience!"</p>
+                        <h4>- Sneha Patel</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq">
+            <div class="head">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <div class="faq-section">
+                <div class="faq-card">
+                    <h3>How do I place an order?</h3>
+                    <p>Simply browse our menu, add items to your cart, and proceed to checkout. You can pay online or opt for cash on delivery.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What are your delivery timings?</h3>
+                    <p>We deliver from 10 AM to 11 PM, seven days a week. Late-night delivery available for select locations.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Can I track my order?</h3>
+                    <p>Yes! After placing your order, you’ll receive a tracking link via SMS and email.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Do you offer bulk/corporate orders?</h3>
+                    <p>Absolutely! Contact us for special pricing and arrangements for bulk or corporate orders.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-section">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-envelope"></i> support@localswad.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fa-brands fa-instagram"></i> @localswadfoods</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text">
+                <h2>About Us</h2>
+                <p>Fresh Food</p>
+                <p>Quality</p>
+                <p>Affordable</p>
+                <p>Offers</p>
+            </div>
+            <div class="text">
+                <h2>Top Dishes</h2>
+                <p>Paneer</p>
+                <p>Burgers</p>
+                <p>Pizza</p>
+                <p>Fast Food</p>
+            </div>
+            <div class="text">
+                <h2>Offer</h2>
+                <p>50% OFF</p>
+                <p>Bulk Order</p>
+                <p>Coupons</p>
+                <p>Special Deals</p>
+            </div>
+            <div class="text">
+                <h2>Connect on</h2>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>LinkedIn</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Page -->
+    <div class="loadPage">
+        <div id="headLoader"></div>
+        <div class="mainLode"></div>
+        <div class="cards">
+            <div class="cardLoad"><p></p></div>
+            <div class="cardLoad"><p></p></div>
+            <div class="cardLoad"><p></p></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
